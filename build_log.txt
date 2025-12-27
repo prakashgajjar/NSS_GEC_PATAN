@@ -1,0 +1,376 @@
+
+> app@0.1.0 build
+> next build
+
+   Γû▓ Next.js 16.0.10 (Turbopack)
+
+   Creating an optimized production build ...
+Error: Cannot apply unknown utility class `border-border`
+    [at onInvalidCandidate (D:\GITHUB-PROJECTS\WEBDEV PROJECTS\NSS_GEC_PATAN\app\node_modules\tailwindcss\dist\lib.js:21:1511)]
+    [at Te (D:\GITHUB-PROJECTS\WEBDEV PROJECTS\NSS_GEC_PATAN\app\node_modules\tailwindcss\dist\lib.js:16:36652)]
+    [at D:\GITHUB-PROJECTS\WEBDEV PROJECTS\NSS_GEC_PATAN\app\node_modules\tailwindcss\dist\lib.js:21:355]
+    [at Rr (D:\GITHUB-PROJECTS\WEBDEV PROJECTS\NSS_GEC_PATAN\app\node_modules\tailwindcss\dist\lib.js:3:1718)]
+    [at _ (D:\GITHUB-PROJECTS\WEBDEV PROJECTS\NSS_GEC_PATAN\app\node_modules\tailwindcss\dist\lib.js:3:1377)]
+    [at $e (D:\GITHUB-PROJECTS\WEBDEV PROJECTS\NSS_GEC_PATAN\app\node_modules\tailwindcss\dist\lib.js:21:172)]
+    [at un (D:\GITHUB-PROJECTS\WEBDEV PROJECTS\NSS_GEC_PATAN\app\node_modules\tailwindcss\dist\lib.js:38:294)]
+    [at async cn (D:\GITHUB-PROJECTS\WEBDEV PROJECTS\NSS_GEC_PATAN\app\node_modules\tailwindcss\dist\lib.js:38:631)]
+    [at async Xr (D:\GITHUB-PROJECTS\WEBDEV PROJECTS\NSS_GEC_PATAN\app\node_modules\@tailwindcss\node\dist\index.js:10:3417)]
+    [at async I (D:\GITHUB-PROJECTS\WEBDEV PROJECTS\NSS_GEC_PATAN\app\node_modules\@tailwindcss\postcss\dist\index.js:10:3977)]
+
+> Build error occurred
+Error: Turbopack build failed with 19 errors:
+./src/app/globals.css
+Error evaluating Node.js code
+CssSyntaxError: tailwindcss: D:\GITHUB-PROJECTS\WEBDEV PROJECTS\NSS_GEC_PATAN\app\src\app\globals.css:1:1: Cannot apply unknown utility class `border-border`
+    at Input.error (node_modules/postcss/lib/input.js:135:16) [D:\GITHUB-PROJECTS\WEBDEV PROJECTS\NSS_GEC_PATAN\app\.next\build\chunks\node_modules_fe693df6._.js:4651:22]
+    at Root.error (node_modules/postcss/lib/node.js:146:32) [D:\GITHUB-PROJECTS\WEBDEV PROJECTS\NSS_GEC_PATAN\app\.next\build\chunks\node_modules_fe693df6._.js:928:38]
+    [at Object.Once (D:\GITHUB-PROJECTS\WEBDEV PROJECTS\NSS_GEC_PATAN\app\node_modules\@tailwindcss\postcss\dist\index.js:10:6911)]
+    at async LazyResult.runAsync (node_modules/postcss/lib/lazy-result.js:293:11) [D:\GITHUB-PROJECTS\WEBDEV PROJECTS\NSS_GEC_PATAN\app\.next\build\chunks\node_modules_fe693df6._.js:6206:21]
+    at async transform (turbopack:///[turbopack-node]/transforms/postcss.ts:70:34) [D:\GITHUB-PROJECTS\WEBDEV PROJECTS\NSS_GEC_PATAN\app\.next\build\chunks\[root-of-the-server]__51225daf._.js:146:36]
+    at async run (turbopack:///[turbopack-node]/ipc/evaluate.ts:92:23) [D:\GITHUB-PROJECTS\WEBDEV PROJECTS\NSS_GEC_PATAN\app\.next\build\chunks\[root-of-the-server]__974941ed._.js:443:31]
+
+Import trace:
+  Client Component Browser:
+    ./src/app/globals.css [Client Component Browser]
+    ./src/app/layout.js [Server Component]
+
+
+./src/app/page.js:8:1
+Module not found: Can't resolve './pages/Achievements'
+   6 | import Index from "./pages/Index";
+   7 | import Welfare from "./pages/Welfare";
+>  8 | import Achievements from "./pages/Achievements";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   9 | import Volunteers from "./pages/Volunteers";
+  10 | import Activities from "./pages/Activities";
+  11 | import Reports from "./pages/Reports";
+
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+./src/app/page.js:10:1
+Module not found: Can't resolve './pages/Activities'
+   8 | import Achievements from "./pages/Achievements";
+   9 | import Volunteers from "./pages/Volunteers";
+> 10 | import Activities from "./pages/Activities";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  11 | import Reports from "./pages/Reports";
+  12 | import AdminLogin from "./pages/admin/Login";
+  13 | import AdminDashboard from "./pages/admin/Dashboard";
+
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+./src/app/page.js:6:1
+Module not found: Can't resolve './pages/Index'
+  4 | import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
+  5 | import { BrowserRouter, Routes, Route } from "react-router-dom";
+> 6 | import Index from "./pages/Index";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 | import Welfare from "./pages/Welfare";
+  8 | import Achievements from "./pages/Achievements";
+  9 | import Volunteers from "./pages/Volunteers";
+
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+./src/app/page.js:14:1
+Module not found: Can't resolve './pages/NotFound'
+  12 | import AdminLogin from "./pages/admin/Login";
+  13 | import AdminDashboard from "./pages/admin/Dashboard";
+> 14 | import NotFound from "./pages/NotFound";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  15 |
+  16 | const queryClient = new QueryClient();
+  17 |
+
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+./src/app/page.js:11:1
+Module not found: Can't resolve './pages/Reports'
+   9 | import Volunteers from "./pages/Volunteers";
+  10 | import Activities from "./pages/Activities";
+> 11 | import Reports from "./pages/Reports";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  12 | import AdminLogin from "./pages/admin/Login";
+  13 | import AdminDashboard from "./pages/admin/Dashboard";
+  14 | import NotFound from "./pages/NotFound";
+
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+./src/app/page.js:9:1
+Module not found: Can't resolve './pages/Volunteers'
+   7 | import Welfare from "./pages/Welfare";
+   8 | import Achievements from "./pages/Achievements";
+>  9 | import Volunteers from "./pages/Volunteers";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  10 | import Activities from "./pages/Activities";
+  11 | import Reports from "./pages/Reports";
+  12 | import AdminLogin from "./pages/admin/Login";
+
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+./src/app/page.js:7:1
+Module not found: Can't resolve './pages/Welfare'
+   5 | import { BrowserRouter, Routes, Route } from "react-router-dom";
+   6 | import Index from "./pages/Index";
+>  7 | import Welfare from "./pages/Welfare";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   8 | import Achievements from "./pages/Achievements";
+   9 | import Volunteers from "./pages/Volunteers";
+  10 | import Activities from "./pages/Activities";
+
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+./src/app/page.js:13:1
+Module not found: Can't resolve './pages/admin/Dashboard'
+  11 | import Reports from "./pages/Reports";
+  12 | import AdminLogin from "./pages/admin/Login";
+> 13 | import AdminDashboard from "./pages/admin/Dashboard";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  14 | import NotFound from "./pages/NotFound";
+  15 |
+  16 | const queryClient = new QueryClient();
+
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+./src/app/page.js:12:1
+Module not found: Can't resolve './pages/admin/Login'
+  10 | import Activities from "./pages/Activities";
+  11 | import Reports from "./pages/Reports";
+> 12 | import AdminLogin from "./pages/admin/Login";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  13 | import AdminDashboard from "./pages/admin/Dashboard";
+  14 | import NotFound from "./pages/NotFound";
+  15 |
+
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+./src/components/ui/toast.js:2:1
+Module not found: Can't resolve '@radix-ui/react-toast'
+  1 | import * as React from "react";
+> 2 | import * as ToastPrimitives from "@radix-ui/react-toast";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 | import { cva } from "class-variance-authority";
+  4 | import { X } from "lucide-react";
+  5 |
+
+
+
+Import trace:
+  Server Component:
+    ./src/components/ui/toast.js
+    ./src/components/ui/toaster.js
+    ./src/app/page.js
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+./src/components/ui/tooltip.js:2:1
+Module not found: Can't resolve '@radix-ui/react-tooltip'
+  1 | import * as React from "react";
+> 2 | import * as TooltipPrimitive from "@radix-ui/react-tooltip";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 |
+  4 | import { cn } from "@/lib/utils";
+  5 |
+
+
+
+Import trace:
+  Server Component:
+    ./src/components/ui/tooltip.js
+    ./src/app/page.js
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+./src/app/page.js:4:1
+Module not found: Can't resolve '@tanstack/react-query'
+  2 | import { Toaster as Sonner } from "@/components/ui/sonner";
+  3 | import { TooltipProvider } from "@/components/ui/tooltip";
+> 4 | import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 | import { BrowserRouter, Routes, Route } from "react-router-dom";
+  6 | import Index from "./pages/Index";
+  7 | import Welfare from "./pages/Welfare";
+
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+./src/components/ui/toast.js:3:1
+Module not found: Can't resolve 'class-variance-authority'
+  1 | import * as React from "react";
+  2 | import * as ToastPrimitives from "@radix-ui/react-toast";
+> 3 | import { cva } from "class-variance-authority";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 | import { X } from "lucide-react";
+  5 |
+  6 | import { cn } from "@/lib/utils";
+
+
+
+Import trace:
+  Server Component:
+    ./src/components/ui/toast.js
+    ./src/components/ui/toaster.js
+    ./src/app/page.js
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+./src/lib/utils.js:1:1
+Module not found: Can't resolve 'clsx'
+> 1 | import { clsx } from "clsx";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  2 | import { twMerge } from "tailwind-merge";
+  3 |
+  4 | export function cn(...inputs) {
+
+
+
+Import trace:
+  Server Component:
+    ./src/lib/utils.js
+    ./src/components/ui/tooltip.js
+    ./src/app/page.js
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+./src/components/ui/sonner.js:1:1
+Module not found: Can't resolve 'next-themes'
+> 1 | import { useTheme } from "next-themes";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  2 | import { Toaster as Sonner, toast } from "sonner";
+  3 |
+  4 | const Toaster = ({ ...props }) => {
+
+
+
+Import trace:
+  Server Component:
+    ./src/components/ui/sonner.js
+    ./src/app/page.js
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+./src/app/page.js:5:1
+Module not found: Can't resolve 'react-router-dom'
+  3 | import { TooltipProvider } from "@/components/ui/tooltip";
+  4 | import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
+> 5 | import { BrowserRouter, Routes, Route } from "react-router-dom";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 | import Index from "./pages/Index";
+  7 | import Welfare from "./pages/Welfare";
+  8 | import Achievements from "./pages/Achievements";
+
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+./src/components/ui/sonner.js:2:1
+Module not found: Can't resolve 'sonner'
+  1 | import { useTheme } from "next-themes";
+> 2 | import { Toaster as Sonner, toast } from "sonner";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 |
+  4 | const Toaster = ({ ...props }) => {
+  5 |   const { theme = "system" } = useTheme();
+
+
+
+Import trace:
+  Server Component:
+    ./src/components/ui/sonner.js
+    ./src/app/page.js
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+./src/lib/utils.js:2:1
+Module not found: Can't resolve 'tailwind-merge'
+  1 | import { clsx } from "clsx";
+> 2 | import { twMerge } from "tailwind-merge";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 |
+  4 | export function cn(...inputs) {
+  5 |   return twMerge(clsx(inputs));
+
+
+
+Import trace:
+  Server Component:
+    ./src/lib/utils.js
+    ./src/components/ui/tooltip.js
+    ./src/app/page.js
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+    at async transform (turbopack:///[turbopack-node]/transforms/postcss.ts:70:34) [D:\GITHUB-PROJECTS\WEBDEV PROJECTS\NSS_GEC_PATAN\app\.next\build\chunks\[root-of-the-server]__51225daf._.js:146:36])
+    at async run (turbopack:///[turbopack-node]/ipc/evaluate.ts:92:23) [D:\GITHUB-PROJECTS\WEBDEV PROJECTS\NSS_GEC_PATAN\app\.next\build\chunks\[root-of-the-server]__974941ed._.js:443:31])
+    at <unknown> (./src/app/page.js:8:1)
+    at <unknown> (https://nextjs.org/docs/messages/module-not-found)
+    at <unknown> (./src/app/page.js:10:1)
+    at <unknown> (https://nextjs.org/docs/messages/module-not-found)
+    at <unknown> (./src/app/page.js:6:1)
+    at <unknown> (https://nextjs.org/docs/messages/module-not-found)
+    at <unknown> (./src/app/page.js:14:1)
+    at <unknown> (https://nextjs.org/docs/messages/module-not-found)
+    at <unknown> (./src/app/page.js:11:1)
+    at <unknown> (https://nextjs.org/docs/messages/module-not-found)
+    at <unknown> (./src/app/page.js:9:1)
+    at <unknown> (https://nextjs.org/docs/messages/module-not-found)
+    at <unknown> (./src/app/page.js:7:1)
+    at <unknown> (https://nextjs.org/docs/messages/module-not-found)
+    at <unknown> (./src/app/page.js:13:1)
+    at <unknown> (https://nextjs.org/docs/messages/module-not-found)
+    at <unknown> (./src/app/page.js:12:1)
+    at <unknown> (https://nextjs.org/docs/messages/module-not-found)
+    at <unknown> (./src/components/ui/toast.js:2:1)
+    at <unknown> (https://nextjs.org/docs/messages/module-not-found)
+    at <unknown> (./src/components/ui/tooltip.js:2:1)
+    at <unknown> (https://nextjs.org/docs/messages/module-not-found)
+    at <unknown> (./src/app/page.js:4:1)
+    at <unknown> (https://nextjs.org/docs/messages/module-not-found)
+    at <unknown> (./src/components/ui/toast.js:3:1)
+    at <unknown> (https://nextjs.org/docs/messages/module-not-found)
+    at <unknown> (./src/lib/utils.js:1:1)
+    at <unknown> (https://nextjs.org/docs/messages/module-not-found)
+    at <unknown> (./src/components/ui/sonner.js:1:1)
+    at <unknown> (https://nextjs.org/docs/messages/module-not-found)
+    at <unknown> (./src/app/page.js:5:1)
+    at <unknown> (https://nextjs.org/docs/messages/module-not-found)
+    at <unknown> (./src/components/ui/sonner.js:2:1)
+    at <unknown> (https://nextjs.org/docs/messages/module-not-found)
+    at <unknown> (./src/lib/utils.js:2:1)
+    at <unknown> (https://nextjs.org/docs/messages/module-not-found)
